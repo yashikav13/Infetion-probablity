@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Covid-19 probablity detector</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="#">Covid-19 detector</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">about us</a>
+           </li>
+           </ul>
+         <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         </form>
+       </div>
+     </nav>
+     <div class ="container">
+            <h2 class="text-center mp-3">Coronavirus Probablity Detector</h2>
+             <p>patient's probablity of infection is {inf}</p>
+            <form action="/" method ="POST">
+              <div class="form-group">
+                     <label for="fever">FEVER VALUE</label>
+                     <input type="text" class="form-control" id="fever" name="fever" placeholder="enter fever value">
+                   </div>
+                   <div class="form-group">
+                     <label for="age">AGE</label>
+                     <input type="text" class="form-control" id="age" name="age" placeholder="enter age">
+                   </div>
+              <div class="form-group">
+                <label for="bodypain">BODY PAIN</label>
+                <select class="form-control custom-select" name = "bodypain" id="bodypain">
+                  
+                  <option value = "0">No pain</option>
+                  <option value = "1">Severe pain</option>
+                </select>
+              </div>
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Runny nose</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="runnynose" id="yes" value="1">
+                      <label class="form-check-label" for="yes">
+                        YES
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="runnynose" id="no" value="0">
+                      <label class="form-check-label" for="no">
+                        NO
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">DIFFICULTY IN BREATHING</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diffbreath" id="no" value="-1">
+                      <label class="form-check-label" for="no">
+                        NO
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diffbreath" id="less" value="0">
+                      <label class="form-check-label" for="less">
+                        LESS
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diffbreath" id="more" value="1">
+                      <label class="form-check-label" for="severe">
+                        SEVERE
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+    
+               <button class ="btn btn-primary" >SUBMIT</button> 
+            </form> 
+           </div>
+          
+           </div>
+          </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
